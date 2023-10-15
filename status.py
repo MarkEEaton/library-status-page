@@ -1,7 +1,8 @@
-from flask import Flask, render_template
+from quart import Quart, render_template
 import httpx
+import asyncio
 
-app = Flask(__name__)
+app = Quart(__name__)
 
 services = [
     {
@@ -602,17 +603,27 @@ services = [
     },
 ]
 
-@app.route('/')
-def index():
-    for service in services:
-        try:
-            response = httpx.get(service['url'])
-            service['status'] = response.status_code
-        except:
-            service['status'] = 500
+async def run_func(client, service):
+    try:
+        response = await client.get(service['url'])
+        service['status'] = response.status_code
+    except:
+        service['status'] = 500
+    return service
 
-    print(services)
-    return render_template('index.html', services=services)
+
+@app.route('/')
+async def index():
+    async with httpx.AsyncClient() as client:
+        output = []
+
+        for service in services:
+            output.append(asyncio.ensure_future(run_func(client, service)))
+
+        gathered_data = await asyncio.gather(*output)
+        print(gathered_data)
+
+    return await render_template('index.html', services=gathered_data)
 
 if __name__ == "__main__":
     app.run(port=8000, host="127.0.0.1")
