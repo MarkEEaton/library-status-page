@@ -17,7 +17,11 @@
         <tr>
           <td class="align-middle px-5">
             <a
-              href="https://kbcc.ezproxy.cuny.edu/login?url={{service.url}}"
+							{% if service.proxy %}
+							href="https://kbcc.ezproxy.cuny.edu/login?url={{ service.url }}"
+							{% else %}
+							href={{service.url}}
+							{% endif %}
               style="text-decoration: none; color: black">
               {{ service.name }}
             </a>
