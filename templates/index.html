@@ -2,6 +2,8 @@
   <head>
 	</head>
   <body>
-		test
+		{% for service in services %}
+		  {{ service.name }} {{ service.status }}
+		{% endfor %}
   </body>
 </html>
