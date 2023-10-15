@@ -23,10 +23,15 @@
             </a>
           </td>
           <td>
-            <button type="button" {% if service.status == 200 %} class="btn
-            btn-success" {% elif 300 <= service.status <= 399 %} class="btn
-            btn-warning" {% else %} class="btn btn-danger" {% endif %} > {{
-            service.status }}
+            <button
+              type="button"
+              {% if service.status < 399 %}
+              class="btn btn-success"
+              {% else %}
+              class="btn btn-danger"
+              {% endif %}>
+              {{ service.status }}
+            </button>
           </td>
         </tr>
         {% endfor %}
