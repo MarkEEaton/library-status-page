@@ -9,6 +9,10 @@ services = [
         'url': 'https://library.kbcc.cuny.edu/homepage',
     },
     {
+        'name': 'Primo',
+        'url': 'https://cuny-kb.primo.exlibrisgroup.com/discovery/search?tab=Everything&vid=01CUNY_KB:CUNY_KB&lang=en',
+    },
+    {
         'name': 'ILLiad',
         'url': 'https://kbcc-cuny.illiad.oclc.org/illiad/logon.html',
     },
@@ -343,6 +347,258 @@ services = [
     {
         'name': 'LegalTrac',
         'url': 'https://link.gale.com/apps/LT',
+    },
+    {
+        'name': 'LexisNexis',
+        'url': 'http://www.nexisuni.com',
+    },
+    {
+        'name': 'Literature Criticism Online',
+        'url': 'https://link.gale.com/apps/LCO',
+    },
+    {
+        'name': 'Literature Resource Center',
+        'url': 'https://link.gale.com/apps/LITRC',
+    },
+    {
+        'name': 'Litfinder',
+        'url': 'https://link.gale.com/apps/LITF',
+    },
+    {
+        'name': 'Making of the Modern World',
+        'url': 'https://link.gale.com/apps/MOME',
+    },
+    {
+        'name': 'MathSciNet',
+        'url': 'https://mathscinet.ams.org/mathscinet',
+    },
+    {
+        'name': 'Medicine & Science in Sports & Exercise',
+        'url': 'http://journals.lww.com/acsm-msse/pages/issuelist.aspx',
+    },
+    {
+        'name': 'MedlinePlus Consumer Health',
+        'url': 'http://www.nlm.nih.gov/medlineplus/',
+    },
+    {
+        'name': 'MLA Style Guide at Purdue Online Writing Lab',
+        'url': 'https://owl.english.purdue.edu/owl/section/2/11/',
+    },
+    {
+        'name': 'MoMA Learning',
+        'url': 'https://www.moma.org/learn/moma_learning',
+    },
+    {
+        'name': 'Nature Journal',
+        'url': ' http://www.nature.com/',
+    },
+    {
+        'name': 'New England Journal of Medicine',
+        'url': 'http://www.nejm.org/',
+    },
+    {
+        'name': 'New York Public Library Digital Collections',
+        'url': 'http://digitalcollections.nypl.org/',
+    },
+    {
+        'name': 'New York State Historic Newspapers',
+        'url': 'http://nyshistoricnewspapers.org/newspapers/',
+    },
+    {
+        'name': 'New York State Newspapers',
+        'url': 'https://link.gale.com/apps/SPJ.SP01',
+    },
+    {
+        'name': 'New York Times 1851-2016 (Historical Newspapers)',
+        'url': 'https://search.proquest.com/hnpnewyorktimes/advanced',
+    },
+    {
+        'name': 'New York Times Academic Pass',
+        'url': 'http://www.nytimes.com/passes',
+    },
+    {
+        'name': 'Nursing and Allied Health Collection',
+        'url': 'https://link.gale.com/apps/PPNU',
+    },
+    {
+        'name': 'NYC Data',
+        'url': 'http://www.baruch.cuny.edu/nycdata/',
+    },
+    {
+        'name': 'NYPD Crime Statistics',
+        'url': 'https://www1.nyc.gov/site/nypd/stats/crime-statistics/crime-statistics-landing.page',
+    },
+    {
+        'name': 'O*Net Online',
+        'url': 'http://www.onetonline.org/',
+    },
+    {
+        'name': 'Occupational Outlook Handbook',
+        'url': 'http://www.bls.gov/ooh/',
+    },
+    {
+        'name': 'Open Library',
+        'url': 'https://openlibrary.org/',
+    },
+    {
+        'name': 'Opposing Viewpoints in Context',
+        'url': 'https://link.gale.com/apps/OVIC',
+    },
+    {
+        'name': 'OSHA: Occupational Safety & Health Administration',
+        'url': 'https://www.osha.gov/SLTC/',
+    },
+    {
+        'name': 'Oxford Art Online',
+        'url': 'http://www.oxfordartonline.com/groveart',
+    },
+    {
+        'name': 'Oxford English Dictionary',
+        'url': 'http://www.oed.com/',
+    },
+    {
+        'name': 'Oxford Handbooks Online: Scholarly Research Reviews',
+        'url': 'https://academic.oup.com/pages/oxford-handbooks',
+    },
+    {
+        'name': 'Oxford Music Online',
+        'url': 'http://www.oxfordmusiconline.com/grovemusic',
+    },
+    {
+        'name': 'Pivot',
+        'url': 'https://pivot.proquest.com',
+    },
+    {
+        'name': 'Primary Sources - Artemis Platform',
+        'url': 'https://infotrac.gale.com/itweb/cuny_kingsboro',
+    },
+    {
+        'name': 'Project Muse',
+        'url': 'http://muse.jhu.edu/',
+    },
+    {
+        'name': 'PsychiatryOnline (DSM-V-TR)',
+        'url': 'http://psychiatryonline.org/index.aspx',        
+    },
+    {
+        'name': 'PubMed',
+        'url': 'http://www.ncbi.nlm.nih.gov/PubMed/',
+    },
+    {
+        'name': 'Purdue OWL',
+        'url': 'https://owl.purdue.edu/',
+    },
+    {
+        'name': 'Refworks',
+        'url': 'http://refworks.proquest.com',
+    },
+    {
+        'name': 'Science In Context',
+        'url': 'https://link.gale.com/apps/SCIC',
+    },
+    {
+        'name': 'Science Magazine',
+        'url': 'http://science.sciencemag.org/',
+    },
+    {
+        'name': 'Science.gov',
+        'url': 'http://www.science.gov/',
+    },
+    {
+        'name': 'ScienceDirect',
+        'url': 'http://www.sciencedirect.com/',
+    },
+    {
+        'name': 'Scribner Writers Online',
+        'url': 'https://link.gale.com/apps/GVRL.xlit.scrb',
+    },
+    {
+        'name': 'Slavery and Anti-Slavery',
+        'url': 'https://link.gale.com/apps/SAS',
+    },
+    {
+        'name': 'Slavery in America and the World: History, Culture & Law',
+        'url': 'http://heinonline.org/HOL/FeedBack?action=slavery_new&collection=slavery',
+    },
+    {
+        'name': 'Smithsonian Magazines Archive 1970-Present',
+        'url': 'https://link.gale.com/apps/SMIT',
+    },
+    {
+        'name': 'Social Explorer',
+        'url': 'http://www.socialexplorer.com/',
+    },
+    {
+        'name': 'SpringerLink',
+        'url': 'http://link.springer.com/',
+    },
+    {
+        'name': 'Swank',
+        'url': 'https://digitalcampus.swankmp.net/kbcc386817',
+    },
+    {
+        'name': 'U.S. Census Bureau',
+        'url': 'http://www.census.gov/',
+    },
+    {
+        'name': 'U.S. Department of Justice Statistics',
+        'url': 'http://www.bjs.gov/',
+    },
+    {
+        'name': 'U.S. Government Printing Office',
+        'url': 'http://www.gpoaccess.gov/index.html',
+    },
+    {
+        'name': 'U.S. History in Context',
+        'url': ' https://link.gale.com/apps/UHIC',
+    },
+    {
+        'name': 'U.S. Major Dailies',
+        'url': 'https://search.proquest.com/usmajordailies/advanced/news/fromDatabasesLayer',
+    },
+    {
+        'name': 'USA.gov',
+        'url': 'http://www.usa.gov/',
+    },
+    {
+        'name': 'Vault (Career Insider)',
+        'url': 'https://access.vault.com/career-insider-login.aspx',
+    },
+    {
+        'name': 'Wall Street Journal',
+        'url': 'http://search.proquest.com/wallstreetjournal',
+    },
+    {
+        'name': 'Wall Street Journal (Access to Digital App)',
+        'url': 'https://partner.wsj.com/enter-redemption-code/CUNYnd5wtb6z',
+    },
+    {
+        'name': 'Wiley Online Library',
+        'url': 'https://onlinelibrary.wiley.com/',
+    },
+    {
+        'name': 'Women and Social Movements in the U.S.',
+        'url': 'http://wass.alexanderstreet.com',
+    },
+    {
+        'name': 'World History in Context',
+        'url': 'https://link.gale.com/apps/WHIC',
+    },
+    {
+        'name': 'WorldCat',
+        'url': 'http://newfirstsearch.oclc.org/dbname=WorldCat;done=referer;FSIP',
+    },
+    {
+        'name': 'Yearbook of Immigration Statistics',
+        'url': 'https://www.dhs.gov/yearbook-immigration-statistics',
+    },
+    {
+        'name': 'Zotero',
+        'url': 'https://www.zotero.org/',
+    },
+    {
+        'name': 'ZoteroBib',
+        'url': 'https://zbib.org/',
     },
 ]
 
