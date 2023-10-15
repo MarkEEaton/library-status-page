@@ -5,13 +5,13 @@ app = Flask(__name__)
 
 services = [
     {
-        'name': 'Library website',
+        'name': 'Kingsborough library website',
         'url': 'https://library.kbcc.cuny.edu/homepage',
         'status': None,
     },
     {
         'name': 'ILLiad',
-        'url': 'https://kbcc.illiad.oclc.org/illiad/logon.html',
+        'url': 'https://kbcc-cuny.illiad.oclc.org/illiad/logon.html',
         'status': None,
     },
     {
