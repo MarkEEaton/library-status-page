@@ -13,25 +13,26 @@
         Status of Kingsborough library services
       </h1>
       <table class="table table-striped">
-				<tr>
-					<th class="align-middle px-5">Service</th>
-					<th class="align-middle" style="padding-right: 5em; text-align: center;">HTTP Status Code</th>
-				</tr>
+        <tr>
+          <th class="align-middle px-5">Service</th>
+          <th class="align-middle" style="padding-right: 5em; text-align: center;">HTTP Status Code</th>
+        </tr>
         {% for service in services %}
         <tr>
           <td class="align-middle px-5">
             <a
-							{% if service.proxy %}
-							href="https://kbcc.ezproxy.cuny.edu/login?url={{ service.url }}"
-							{% else %}
-							href={{service.url}}
-							{% endif %}
+              {% if service.proxy %}
+              href="https://kbcc.ezproxy.cuny.edu/login?url={{ service.url }}"
+              {% else %}
+              href={{service.url}}
+              {% endif %}
               style="text-decoration: none; color: black">
-							{{ service.name }}
+              {{ service.name }}
             </a>
           </td>
-					<td style="text-align: center; padding-right: 5em;">
+          <td style="text-align: center; padding-right: 5em;">
             <button
+              style="width: 200px;"
               type="button"
               {% if service.status < 399 %}
               class="btn btn-success"
