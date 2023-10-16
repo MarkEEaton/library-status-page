@@ -745,10 +745,18 @@ services = [
 async def run_func(client, service):
     try:
         response = await client.get(service['url'])
-        service['status'] = response.status_code
+        resp = response.status_code
+        if resp < 300:
+            service['message'] = "OK! (" + str(resp) + ")"
+        elif 300 <= resp < 400:
+            service['message'] = "Redirect (" + str(resp) + ")"
+        else:
+            service['message'] = "Error (" + str(resp) + ")"
+        service['status'] = resp
     except Exception as e:
         print(e)
         service['status'] = 500
+        service['message'] = "Error - 500" 
     return service
 
 
