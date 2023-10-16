@@ -13,6 +13,10 @@
         Status of Kingsborough library services
       </h1>
       <table class="table table-striped">
+				<tr>
+					<th class="align-middle px-5">Service</th>
+					<th class="align-middle" style="padding-right: 5em; text-align: center;">HTTP Status Code</th>
+				</tr>
         {% for service in services %}
         <tr>
           <td class="align-middle px-5">
@@ -26,7 +30,7 @@
 							{{ service.name }}
             </a>
           </td>
-          <td>
+					<td style="text-align: center; padding-right: 5em;">
             <button
               type="button"
               {% if service.status < 399 %}
