@@ -763,7 +763,7 @@ async def run_func(client, service):
 @app.route('/')
 async def index():
     headers = {'user-agent': 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'}
-    async with httpx.AsyncClient(headers=headers) as client:
+    async with httpx.AsyncClient(follow_redirects=True, headers=headers) as client:
         output = []
         for service in services:
             output.append(asyncio.ensure_future(run_func(client, service)))
