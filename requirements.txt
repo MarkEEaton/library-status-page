@@ -4,7 +4,7 @@ blinker==1.6.3
 certifi==2024.12.14
 click==8.1.7
 Flask==3.0.0
-h11==0.14.0
+h11==0.16.0
 h2==4.1.0
 hpack==4.0.0
 httpcore==0.18.0
